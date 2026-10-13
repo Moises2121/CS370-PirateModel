@@ -1,1 +1,11 @@
 # CS370-PirateModel
+
+## About this project
+This agent implements Deep Q-learning with experience and target network. It starts by building the Treasure Maze environment and initializing the replay buffer. For each 15,000 epoch the target network gets updated every 50 epochs, resets the maze and puts the agent into the game until the game is finalized. Each step the agent takes is an action that uses epsilon-greedy policy which is both random and best predicted by the model. It then gets new state, reward, and stores it in memory that trains the network when enough experience is present. It stops once the win rate reaches 99.9% - which is also when all cells have been explored.
+
+## Result
+For my model, the first win was seen at 41 epochs with a 0.031-win rate. After the first break at 65 Epoch wins climbed rapidly to 0.84 by Epoch 163. It then held a 0.969-win rate from epoch 217-271 due to the 3% epsilon that forces random exploration losses. The win rate hit 1.0 at epoch 272 and stopped after 35.5 minutes, showing a clean path from (0,0) to the goal as seen in the final plot.
+
+## Computer Science
+Computer sicentist develop and design code by following best practices that allows functionality and scalability. A good computer scientist will aim to develop self-sustainable code that can be used long-term, and solve problesm that would otherwise require manual labor and expensive resources.<br>
+Approaching problems with a security-first mindset have helped me develop code that fulfills ethical concerns thrououhgt organization. One example is hashing passwords before being stored in databases. Additionally, design is as important sicen it creates user engagement and help scale products from prototypes to source of income. Applications that keep user needs in mind hire the strongest candidates and help foster a culture of privacy and accountability. I hope to keep moving forward in this field as a back end developer that ensures best practices and innovates through user needs.
